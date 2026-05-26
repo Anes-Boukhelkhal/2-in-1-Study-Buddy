@@ -210,7 +210,7 @@ huart2.Init.OverSampling = UART_OVERSAMPLING_16;
   /* USER CODE BEGIN 2 */
   /* USER CODE END 2 */
 
-  /* Infinite loop */
+  
   /* USER CODE BEGIN WHILE */
 while (1 == 1)
 {
@@ -288,7 +288,7 @@ while (1 == 1)
 			currentLED = 0;
 		}
 
-		turnedOff = 1; // flag to make sure that the if statement only runs for the current LED once.
+		turnedOff = 1; // flag to ensure that the if statement only runs for the current LED once.
 	}
 
 	if ( (timeOffset == 14 || timeOffset == 29 || timeOffset == 44 || timeOffset == 59) && (turnedOff == 1) ) {
